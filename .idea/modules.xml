@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyStudyDemo.iml" filepath="$PROJECT_DIR$/MyStudyDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebViewBridgeLibrary/WebViewBridgeLibrary.iml" filepath="$PROJECT_DIR$/WebViewBridgeLibrary/WebViewBridgeLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebViewDemo/WebViewDemo.iml" filepath="$PROJECT_DIR$/WebViewDemo/WebViewDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buglytinker/buglytinker.iml" filepath="$PROJECT_DIR$/buglytinker/buglytinker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eventbus/eventbus.iml" filepath="$PROJECT_DIR$/eventbus/eventbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/getui推送/getui推送.iml" filepath="$PROJECT_DIR$/getui推送/getui推送.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iflytek/iflytek.iml" filepath="$PROJECT_DIR$/iflytek/iflytek.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpush/jpush.iml" filepath="$PROJECT_DIR$/jpush/jpush.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttp/okhttp.iml" filepath="$PROJECT_DIR$/okhttp/okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit/retrofit.iml" filepath="$PROJECT_DIR$/retrofit/retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharesdk/sharesdk.iml" filepath="$PROJECT_DIR$/sharesdk/sharesdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/splash_viewpager_fragment/splash_viewpager_fragment.iml" filepath="$PROJECT_DIR$/splash_viewpager_fragment/splash_viewpager_fragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testsdk/testsdk.iml" filepath="$PROJECT_DIR$/testsdk/testsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umeng/umeng.iml" filepath="$PROJECT_DIR$/umeng/umeng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wechatshare/wechatshare.iml" filepath="$PROJECT_DIR$/wechatshare/wechatshare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xgpush/xgpush.iml" filepath="$PROJECT_DIR$/xgpush/xgpush.iml" />
+    </modules>
+  </component>
+</project>

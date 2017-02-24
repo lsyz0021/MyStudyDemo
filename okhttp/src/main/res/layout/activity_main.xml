@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hfax.demo.okhttp.MainActivity">
+
+    <Button
+        android:id="@+id/btn_mian_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="get请求"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_mian_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="post请求"
+        android:textAllCaps="false"/>
+</LinearLayout>

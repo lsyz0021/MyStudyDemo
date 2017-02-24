@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--分享-->
+    <color name="wechatshare_white">#ffffffff</color>
+    <color name="wechatshare_black">#ff000000</color>
+    <color name="wechatshare_black_alpha55">#55000000</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

@@ -1,0 +1,1 @@
+include ':app', ':eventbus', ':okhttp', ':splash_viewpager_fragment', ':testsdk', ':WebViewBridgeLibrary', ':WebViewDemo', ':xgpush', ':jpush', ':wechatshare', ':wechatshare', ':sharesdk', ':iflytek', ':umeng', ':getui推送', ':buglytinker','retrofit'

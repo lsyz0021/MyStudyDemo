@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.2"
+
+    signingConfigs {
+
+        debug {
+            storeFile file('../bandeng_appKey_release.jks')
+            keyAlias 'bandeng'
+            keyPassword 'qwert12345'
+            storePassword 'qwert12345'
+        }
+
+        release {
+            storeFile file('../bandeng_appKey_release.jks')
+            keyAlias 'bandeng'
+            keyPassword 'qwert12345'
+            storePassword 'qwert12345'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.hfax.umeng"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.release
+    }
+    buildTypes {
+        debug {
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        pressure {
+            applicationIdSuffix ".pressure"
+            manifestPlaceholders = [
+                    UMENG_CHANNEL_VALUE: "pressure",
+                    BASE_URL           : "http://www.360.com",
+            ]
+        }
+    }
+
+    productFlavors {
+
+        wandoujia {}
+        baidu {}
+        c360 {}
+        uc {}
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [
+                    UMENG_CHANNEL_VALUE: name,
+                    BASE_URL           : "http://www.baidu.com",
+            ]
+        }
+
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+}
