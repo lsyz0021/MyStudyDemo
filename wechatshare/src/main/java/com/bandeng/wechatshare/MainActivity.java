@@ -25,9 +25,11 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         shareBlackView = (LinearLayout) findViewById(R.id.showblackview);
         Button btn_popWindow = (Button) findViewById(R.id.btn_popWindow);
+        Button btn_popWindow2 = (Button) findViewById(R.id.btn_popWindow2);
         Button btn_button = (Button) findViewById(R.id.btn_button);
 
         btn_popWindow.setOnClickListener(this);
+        btn_popWindow2.setOnClickListener(this);
         btn_button.setOnClickListener(this);
 
     }
@@ -36,19 +38,31 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     @Override
     public void onClick(View v) {
 
+        // 设置分享的内容
+        Map<String, Object> data = new HashMap<String, Object>();
+        data.put("webpageUrl", "http://blog.csdn.net/lsyz0021/");
+        data.put("title", "星空武哥的博客");
+        data.put("des", "欢迎交流学习Android，点击访问博客 http://blog.csdn.net/lsyz0021/");
         switch (v.getId()) {
 
             case R.id.btn_popWindow:
-                // 设置分享的内容
-                Map<String, Object> data = new HashMap<String, Object>();
-                data.put("webpageUrl", "http://blog.csdn.net/lsyz0021/");
-                data.put("title", "星空武哥的博客");
-                data.put("des", "适合初学android的博客，我们可以一起交流学习android，欢迎访问。");
 
                 ShareWindow shareWindow = new ShareWindow(MainActivity.this, data);
                 // PopupWindow显示的位置
                 shareWindow.showAtLocation(shareBlackView, Gravity.BOTTOM | Gravity.FILL, 0, 0);
                 shareWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+                    @Override
+                    public void onDismiss() {
+                        shareBlackView.setVisibility(View.GONE);
+                    }
+                });
+                break;
+            case R.id.btn_popWindow2:
+
+                ShareWindow2 shareWindow2 = new ShareWindow2(MainActivity.this, data);
+                // PopupWindow显示的位置
+                shareWindow2.showAtLocation(shareBlackView, Gravity.BOTTOM, 0, 0);
+                shareWindow2.setOnDismissListener(new PopupWindow.OnDismissListener() {
                     @Override
                     public void onDismiss() {
                         shareBlackView.setVisibility(View.GONE);

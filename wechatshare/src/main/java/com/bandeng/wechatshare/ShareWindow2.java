@@ -30,7 +30,7 @@ import static android.view.View.OnTouchListener;
 /**
  * Created by WangSummer on 15/11/13.
  */
-public class ShareWindow extends PopupWindow implements OnClickListener {
+public class ShareWindow2 extends PopupWindow implements OnClickListener {
 
     private static IWXAPI wxApi;
 
@@ -41,11 +41,11 @@ public class ShareWindow extends PopupWindow implements OnClickListener {
     private Map<String, Object> hashMap;
     private static String weChatAppID;
 
-    public ShareWindow(Context context, Map<String, Object> shareMsm) {
+    public ShareWindow2(Context context, Map<String, Object> shareMsm) {
         super(context);
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        mMenuView = inflater.inflate(R.layout.layout_share, null);
+        mMenuView = inflater.inflate(R.layout.layout_share2, null);
         this.context = context;
         this.hashMap = shareMsm;
         try {
