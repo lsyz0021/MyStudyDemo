@@ -9,11 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/ll_she"
-        android:background="@color/wechatshare_white"
+        android:background="@android:color/white"
         android:gravity="center_horizontal"
         android:paddingTop="10dp"
         android:text="分享"
-        android:textColor="@color/wechatshare_black"
+        android:textColor="@android:color/black"
         android:textSize="15sp"/>
 
     <LinearLayout
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/wechatshare_white"
+        android:background="@android:color/white"
         android:orientation="horizontal"
         android:paddingBottom="15dp">
 
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-15dp"
                 android:text="微信"
-                android:textColor="@color/wechatshare_black"
+                android:textColor="@android:color/black"
                 android:textSize="12sp"/>
         </LinearLayout>
 
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-15dp"
                 android:text="朋友圈"
-                android:textColor="@color/wechatshare_black"
+                android:textColor="@android:color/black"
                 android:textSize="12sp"/>
         </LinearLayout>
 
@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-15dp"
                 android:text="短信"
-                android:textColor="@color/wechatshare_black"
+                android:textColor="@android:color/black"
                 android:textSize="12sp"/>
         </LinearLayout>
 

@@ -12,11 +12,10 @@ import org.greenrobot.eventbus.EventBus;
  */
 public class MyApplication extends Application {
 
-	@Override
-	public void onCreate() {
-		super.onCreate();
-		// 启用EventBus3.0加速功能
-		EventBus.builder().addIndex(new MyEventBusIndex()).installDefaultEventBus();
-
-	}
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        // 启用EventBus3.0加速功能
+        EventBus.builder().addIndex(new MyEventBusIndex()).installDefaultEventBus();
+    }
 }
