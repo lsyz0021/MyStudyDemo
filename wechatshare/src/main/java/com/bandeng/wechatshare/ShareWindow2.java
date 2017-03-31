@@ -77,7 +77,7 @@ public class ShareWindow2 extends PopupWindow implements OnClickListener {
         ColorDrawable dw = new ColorDrawable(0xddd9d8d8);
         // 设置弹出窗体的背景
         this.setBackgroundDrawable(dw);
-
+        this.setOutsideTouchable(true); // 点击PopupWindow 以外区域是否可以隐藏PopupWindow
         mMenuView.setOnTouchListener(new OnTouchListener() {
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_UP) {
